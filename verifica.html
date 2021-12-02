@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>VERIFICA</title>
+    </head>
+
+    <body>
+        
+
+      nome : <input type=text id =nome></br>
+      cognome : <input type=text id=cogn></br>
+      voto : <input type = number id =voto></br>
+      <button id=btn>add</button>
+      <table id =tab border =5>
+        <tr>
+            <th>nome</th><th>congome</th><th>voto</th>
+        </tr>
+    </table>
+    </body>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script>
+     $("#btn").click(function(){
+      var nome = document.getElementById("nome").value;
+      var cogn = document.getElementById("cogn").value;
+      var voto = document.getElementById("voto").value;
+      var tab = document.getElementById("tab");
+      var row = tab.insertRow();
+      var cell1 = row.insertCell();
+      var cell2 = row.insertCell();
+      var cell3 = row.insertCell();
+     
+      cell1.innerHTML = nome;
+      cell2.innerHTML = cogn;
+      cell3.innerHTML = voto;
+     
+
+
+     })
+    </script>
+</html>
